@@ -145,17 +145,18 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="/index/index">首页</a></li>
-                                <li><a href="/index/photo">作品</a>
+                                <!--TODO Nav跳转-->
+                                <li><a href="/index/index">Home 首页</a></li>
+                                <li><a href="/index/photo">Blog 博客</a>
                                     <ul class="dropdown">
-                                        <li><a href="/index/photo">人像</a></li>
-                                        <li><a href="/index/photo">风景</a></li>
-                                        <li><a href="/index/photo">纪实</a></li>
+                                        {foreach name="categories" item="vo"}
+                                        <li><a href="/index/index">{$vo.name}</a></li>
+                                        {/foreach}
                                     </ul>
                                 </li>
-                                <li><a href="/index/about">预约</a></li>
-                                <li><a href="/index/about">关于</a></li>
-                                <li><a href="/index/contact">联系</a></li>
+                                <li><a href="/index/about">Reserve 预约</a></li>
+                                <li><a href="/index/about">About 关于</a></li>
+                                <li><a href="/index/contact">Contact 联系</a></li>
                             </ul>
 
                             <!-- Search Form  -->
@@ -280,11 +281,11 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="/front/index.html">首页</a></li>
-                                    <li><a href="#">作品</a></li>
-                                    <li><a href="/index/about">预约</a></li>
-                                    <li><a href="/front/about-us.html">关于</a></li>
-                                    <li><a href="/front/contact.html">联系</a></li>
+                                    <li><a href="/index/index">Home 首页</a></li>
+                                    <li><a href="/index/photo">Blog 博客</a></li>
+                                    <li><a href="/index/about">Reserve 预约</a></li>
+                                    <li><a href="/index/about">About 关于</a></li>
+                                    <li><a href="/index/contact">Contact 联系</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -314,11 +315,24 @@
 
     Copyright &copy;2016-
     <script>document.write(new Date().getFullYear());</script> All Rights Reserved KevinWong<br>
+    <a style="color: #b3b3b3">冀ICP备17012584号</a><br>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cspan id='cnzz_stat_icon_1261891361'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261891361%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 
 </footer>
 <!-- ##### Footer Area End ##### -->
+
+<!-- ##### Baidu HM ##### -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c544ce2fd1285dff636c95c7698e116e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
 
 <!-- jQuery (Necessary for All JavaScript Plugins) -->
 <script src="/front/js/jquery/jquery-2.2.4.min.js"></script>

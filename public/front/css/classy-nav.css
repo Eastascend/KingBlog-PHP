@@ -90,7 +90,8 @@ img {
 .justify-content-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .classy-navbar {
   width: 100%;
@@ -400,7 +401,7 @@ img {
   -ms-grid-row-align: center;
   align-items: center; }
 .breakpoint-off .classynav ul li .dropdown {
-  width: 180px;
+  width: 210px;
   position: absolute;
   background-color: #ffffff;
   top: 120%;
