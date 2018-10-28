@@ -2,6 +2,7 @@
 
 namespace app\index\controller;
 
+use app\admin\model\article\Article;
 use app\admin\model\article\Category;
 use app\admin\model\article\Tag;
 use app\admin\model\Banner;
@@ -17,6 +18,7 @@ class Index extends Frontend
     protected $bannerModel = null;
     protected $categoryModel = null;
     protected $tagsModel = null;
+    protected $articleModel = null;
 
     public function _initialize()
     {
@@ -24,6 +26,7 @@ class Index extends Frontend
         $this->bannerModel = new Banner();
         $this->categoryModel = new Category();
         $this->tagsModel = new Tag();
+        $this->articleModel = new Article();
     }
 
     public function index()
@@ -45,9 +48,16 @@ class Index extends Frontend
             ->order('id')
             ->select();
 
+        // 博客列表
+        $articles = $this->articleModel
+            ->order('id')
+            ->limit(3)
+            ->select();
+
         $this->view->assign("banners", $banners);
         $this->view->assign("categories", $categories);
         $this->view->assign("tags", $tags);
+        $this->view->assign("articles", $articles);
 
         return $this->view->fetch('/index');
     }
