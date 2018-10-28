@@ -3,50 +3,26 @@
     <!-- Hero Slides Area -->
     <div class="hero-slides owl-carousel">
         <!-- Single Slide -->
-        <div class="single-hero-slide bg-img" style="background-image: url(/front/img/bg-img/b2.jpg);">
+        {foreach name="banners" item="vo"}
+        <div class="single-hero-slide bg-img" style="background-image: url({$vo.image});">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <div class="slide-content text-center">
                             <div class="post-tag">
-                                <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                <a href="{$vo.link}" data-animation="fadeInUp">KevinWong</a>
                             </div>
-                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="photo.html">Take a look at last night’s party!</a></h2>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{$vo.link}">{$vo.name}</a></h2>
+                            <!--<div class="read more">
+                                <a data-animation="fadeInUp" data-delay="400ms">查看详情</a>
+                            </div>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Single Slide -->
-        <div class="single-hero-slide bg-img" style="background-image: url('/front/img/bg-img/b1.jpg');">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12">
-                        <div class="slide-content text-center">
-                            <div class="post-tag">
-                                <a href="#" data-animation="fadeInUp">lifestyle</a>
-                            </div>
-                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="photo.html">Take a look at last night’s party!</a></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Single Slide -->
-        <div class="single-hero-slide bg-img" style="background-image: url('/front/img/bg-img/b3.jpg');">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12">
-                        <div class="slide-content text-center">
-                            <div class="post-tag">
-                                <a href="#" data-animation="fadeInUp">lifestyle</a>
-                            </div>
-                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="photo.html">Take a look at last night’s party!</a></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {/foreach}
+
     </div>
 </div>
 <!-- ##### Hero Area End ##### -->
@@ -57,34 +33,35 @@
         <div class="row align-items-end">
             <!-- Single Blog Area -->
             <div class="col-12 col-lg-4">
-                <div class="single-blog-area clearfix mb-100">
+                <div class="single-blog-area clearfix mb-100" >
                     <!-- Blog Content -->
                     <div class="single-blog-content">
                         <div class="line"></div>
-                        <a href="#" class="post-tag">Lifestyle</a>
-                        <h4><a href="#" class="post-headline">Welcome to this Lifestyle blog</a></h4>
-                        <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Morbi sodales, dolor id ultricies dictum</p>
-                        <a href="#" class="btn original-btn">Read More</a>
+                        <a href="#" class="post-tag">KevinWong</a>
+                        <h4><a href="#" class="post-headline">欢迎来到东升映像</a></h4>
+                        <p>我是一名自由摄影师(Freelance Photographer),主业是一名软件工程师(Coder),非常喜欢摄影,我会在这里不定期发布一些我的个人摄影作品,
+                            欢迎来撩哦~也可以订阅一下,发布新作品时会自动发邮件通知你哦 ^_^</p>
+                        <a style="font-size: 16px" href="#" class="btn original-btn">了解更多</a>
                     </div>
                 </div>
             </div>
             <!-- Single Blog Area -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="single-catagory-area clearfix mb-100">
-                    <img src="/front/img/blog-img/1.jpg" alt="">
+                    <img style="border-radius: 10px;" src="/front/img/blog-img/1.jpg" alt="">
                     <!-- Catagory Title -->
                     <div class="catagory-title">
-                        <a href="#">Lifestyle posts</a>
+                        <a href="#">最新发布</a>
                     </div>
                 </div>
             </div>
             <!-- Single Blog Area -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="single-catagory-area clearfix mb-100">
-                    <img src="/front/img/blog-img/2.jpg" alt="">
+                    <img style="border-radius: 10px;" src="/front/img/blog-img/2.jpg" alt="">
                     <!-- Catagory Title -->
                     <div class="catagory-title">
-                        <a href="#">latest posts</a>
+                        <a href="#">最新发布</a>
                     </div>
                 </div>
             </div>
@@ -96,11 +73,12 @@
             <div class="col-12 col-lg-9">
 
                 <!-- Single Blog Area  -->
-                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s"
+                     data-wow-duration="1000ms">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6">
                             <div class="single-blog-thumbnail">
-                                <img src="/front/img/blog-img/3.jpg" alt="">
+                                <img style="border-radius: 10px;" src="/front/img/blog-img/3.jpg" alt="">
                                 <div class="post-date">
                                     <a href="#">12 <span>march</span></a>
                                 </div>
@@ -112,7 +90,9 @@
                                 <div class="line"></div>
                                 <a href="#" class="post-tag">Lifestyle</a>
                                 <h4><a href="#" class="post-headline">Party people in the house</a></h4>
-                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
+                                    vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus,
+                                    vel volutpat quam tincidunt.</p>
                                 <div class="post-meta">
                                     <p>By <a href="#">james smith</a></p>
                                     <p>3 comments</p>
@@ -123,11 +103,12 @@
                 </div>
 
                 <!-- Single Blog Area  -->
-                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1000ms">
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s"
+                     data-wow-duration="1000ms">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6">
                             <div class="single-blog-thumbnail">
-                                <img src="/front/img/blog-img/4.jpg" alt="">
+                                <img style="border-radius: 10px;" src="/front/img/blog-img/4.jpg" alt="">
                                 <div class="post-date">
                                     <a href="#">12 <span>march</span></a>
                                 </div>
@@ -139,7 +120,9 @@
                                 <div class="line"></div>
                                 <a href="#" class="post-tag">Lifestyle</a>
                                 <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
-                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
+                                    vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus,
+                                    vel volutpat quam tincidunt.</p>
                                 <div class="post-meta">
                                     <p>By <a href="#">james smith</a></p>
                                     <p>3 comments</p>
@@ -150,11 +133,12 @@
                 </div>
 
                 <!-- Single Blog Area  -->
-                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1000ms">
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.4s"
+                     data-wow-duration="1000ms">
                     <div class="row">
                         <div class="col-12">
                             <div class="single-blog-thumbnail">
-                                <img src="/front/img/blog-img/7.jpg" alt="">
+                                <img style="border-radius: 10px;" src="/front/img/blog-img/7.jpg" alt="">
                                 <div class="post-date">
                                     <a href="#">10 <span>march</span></a>
                                 </div>
@@ -166,7 +150,9 @@
                                 <div class="line"></div>
                                 <a href="#" class="post-tag">Lifestyle</a>
                                 <h4><a href="#" class="post-headline">10 Tips to organize the perfect party</a></h4>
-                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
+                                    vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus,
+                                    vel volutpat quam tincidunt.</p>
                                 <div class="post-meta">
                                     <p>By <a href="#">james smith</a></p>
                                     <p>3 comments</p>
@@ -177,11 +163,12 @@
                 </div>
 
                 <!-- Single Blog Area  -->
-                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1000ms">
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.5s"
+                     data-wow-duration="1000ms">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6">
                             <div class="single-blog-thumbnail">
-                                <img src="/front/img/blog-img/5.jpg" alt="">
+                                <img  style="border-radius: 10px;" src="/front/img/blog-img/5.jpg" alt="">
                                 <div class="post-date">
                                     <a href="#">12 <span>march</span></a>
                                 </div>
@@ -193,7 +180,9 @@
                                 <div class="line"></div>
                                 <a href="#" class="post-tag">Lifestyle</a>
                                 <h4><a href="#" class="post-headline">Party people in the house</a></h4>
-                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
+                                    vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus,
+                                    vel volutpat quam tincidunt.</p>
                                 <div class="post-meta">
                                     <p>By <a href="#">james smith</a></p>
                                     <p>3 comments</p>
@@ -204,11 +193,12 @@
                 </div>
 
                 <!-- Single Blog Area  -->
-                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1000ms">
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s"
+                     data-wow-duration="1000ms">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6">
                             <div class="single-blog-thumbnail">
-                                <img src="/front/img/blog-img/6.jpg" alt="">
+                                <img style="border-radius: 10px;" src="/front/img/blog-img/6.jpg" alt="">
                                 <div class="post-date">
                                     <a href="#">12 <span>march</span></a>
                                 </div>
@@ -220,7 +210,9 @@
                                 <div class="line"></div>
                                 <a href="#" class="post-tag">Lifestyle</a>
                                 <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
-                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
+                                    vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus,
+                                    vel volutpat quam tincidunt.</p>
                                 <div class="post-meta">
                                     <p>By <a href="#">james smith</a></p>
                                     <p>3 comments</p>
@@ -262,7 +254,7 @@
                     <!-- Widget Area -->
                     <div class="sidebar-widget-area">
                         <h5 class="title">Advertisement</h5>
-                        <a href="#"><img src="/front/img/bg-img/add.gif" alt=""></a>
+                        <a href="#"><img style="border-radius: 10px;" src="/front/img/bg-img/add.gif" alt=""></a>
                     </div>
 
                     <!-- Widget Area -->
@@ -275,7 +267,7 @@
                             <div class="single-blog-post d-flex align-items-center widget-post">
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp1.jpg" alt="">
+                                    <img style="border-radius: 10px;" src="/front/img/blog-img/lp1.jpg" alt="">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -291,7 +283,7 @@
                             <div class="single-blog-post d-flex align-items-center widget-post">
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp2.jpg" alt="">
+                                    <img style="border-radius: 10px;" src="/front/img/blog-img/lp2.jpg" alt="">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -307,7 +299,7 @@
                             <div class="single-blog-post d-flex align-items-center widget-post">
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp3.jpg" alt="">
+                                    <img style="border-radius: 10px;" src="/front/img/blog-img/lp3.jpg" alt="">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -323,7 +315,7 @@
                             <div class="single-blog-post d-flex align-items-center widget-post">
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp4.jpg" alt="">
+                                    <img style="border-radius: 10px;" src="/front/img/blog-img/lp4.jpg" alt="">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -339,17 +331,11 @@
 
                     <!-- Widget Area -->
                     <div class="sidebar-widget-area">
-                        <h5 class="title">Tags</h5>
+                        <h5 class="title">标签/Tags</h5>
                         <div class="widget-content">
                             <ul class="tags">
-                                <li><a href="#">design</a></li>
-                                <li><a href="#">fashion</a></li>
-                                <li><a href="#">travel</a></li>
-                                <li><a href="#">music</a></li>
-                                <li><a href="#">party</a></li>
-                                <li><a href="#">video</a></li>
-                                <li><a href="#">photography</a></li>
-                                <li><a href="#">adventure</a></li>
+                                <!--TODO 标签跳转-->
+                                {foreach name="tags" item="vo"}<li><a href="#">{$vo.name}</a></li>{/foreach}
                             </ul>
                         </div>
                     </div>

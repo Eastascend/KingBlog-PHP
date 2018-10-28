@@ -636,7 +636,7 @@ img {
             @include trans-duration(500ms);
             &:hover,
             &:focus {
-                background-color: #0d0d0d;
+                background-color: #2ecc71;
                 color: $color-white;
             }
         }

@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  'name' => 'FastAdmin',
-  'beian' => '',
+  'name' => '东升映像',
+  'beian' => '冀ICP备17012584号',
   'cdnurl' => '',
   'version' => '1.0.1',
   'timezone' => 'Asia/Shanghai',
