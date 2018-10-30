@@ -1,7 +1,23 @@
 <!-- ##### Google Map ##### -->
+<!--
 <div class="map-area">
     <div id="googleMap" class="googleMap"></div>
 </div>
+-->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img" style="background-image: url('/front/img/bg-img/b1.jpg');">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content text-center">
+                    <h2>联系我</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Contact Area Start ##### -->
 <section class="contact-area section-padding-100">
@@ -12,14 +28,14 @@
                 <div class="contact-form">
                     <h5>留言</h5>
                     <!-- Contact Form -->
-                    <form action="#" method="post">
+                    <form action="/index/contact/message" method="post">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="group">
                                     <input type="text" name="name" id="name" required>
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
-                                    <label>Name</label>
+                                    <label>名字/Name</label>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -27,15 +43,7 @@
                                     <input type="email" name="email" id="email" required>
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
-                                    <label>Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="group">
-                                    <input type="text" name="subject" id="subject" required>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Subject</label>
+                                    <label>邮箱/Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -43,11 +51,11 @@
                                     <textarea name="message" id="message" required></textarea>
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
-                                    <label>Message</label>
+                                    <label>内容/Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn original-btn">Send Message</button>
+                                <button type="submit" id="messageContentFormBtn" class="btn original-btn">发送留言/Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -58,20 +66,20 @@
                 <div class="post-sidebar-area">
 
                     <!-- Widget Area -->
-                    <div class="sidebar-widget-area">
+<!--                    <div class="sidebar-widget-area">
                         <form action="#" class="search-form">
                             <input type="search" name="search" id="searchForm" placeholder="Search">
                             <input type="submit" value="submit">
                         </form>
-                    </div>
+                    </div>-->
 
                     <!-- Widget Area -->
                     <div class="sidebar-widget-area">
-                        <h5 class="title subscribe-title">订阅我的博客</h5>
+                        <h5 class="title subscribe-title">订阅我的博客/Subscribe</h5>
                         <div class="widget-content">
                             <form action="#" class="newsletterForm">
-                                <input type="email" name="email" id="subscribesForm" placeholder="请输入您的E-Mail">
-                                <button type="submit" class="btn original-btn">订阅</button>
+                                <input type="email" name="email" id="subscribesForm" placeholder="请输入您的E-Mail" required>
+                                <button type="submit" class="btn original-btn">订阅/Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -94,3 +102,26 @@
     </div>
 </section>
 <!-- ##### Contact Area End ##### -->
+
+<script>
+    $('#messageContentFormBtn').on('click', function(){
+        // 名字不能为空
+        if($('#name').val() == '') {
+            openAlert('名字不能为空', false);
+            return false;
+        }
+
+        // 邮箱不能为空
+        if($('#email').val() == '') {
+            openAlert('邮箱不能为空', false);
+            return false;
+        }
+
+        // 留言内容不能为空
+        if($('#message').val().length == '') {
+            openAlert('留言内容不能为空', false);
+            return false;
+        }
+
+    })
+</script>

@@ -1,0 +1,175 @@
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img" style="background-image: url('/front/img/bg-img/b1.jpg');">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content text-center">
+                    <h2>联系我</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Blog Wrapper Start ##### -->
+<div class="blog-wrapper section-padding-100 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+
+                <!-- Single Blog Area  TODO 博客列表-->
+                {foreach name="articles" item="vo"}
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s"
+                     data-wow-duration="1000ms">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-thumbnail">
+                                <img style="border-radius: 10px;box-shadow: 0 1px 4px rgba(0,0,0,.02), 0 11px 12px -5px rgba(0,0,0,.17);" src="{$vo.image}" alt="">
+                                <div class="post-date">
+                                    <a href="#">12 <span>march</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <div class="line"></div>
+                                <a href="#" class="post-tag">Lifestyle</a>
+                                <h4><a href="/index/blog/bloginfo/id/{$vo.id}" class="post-headline">{$vo.title}</a></h4>
+                                <p>{$vo.summary}</p>
+                                <div class="post-meta">
+                                    <p>By <a href="#">{$vo.author}</a></p>
+                                    <p>3 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/foreach}
+
+
+                <!-- Load More -->
+                <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                    <a href="#" class="btn original-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- ##### Sidebar Area ##### -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="post-sidebar-area">
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <form action="#" class="search-form">
+                            <input type="search" name="search" id="searchForm" placeholder="Search">
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title subscribe-title">Subscribe to my newsletter</h5>
+                        <div class="widget-content">
+                            <form action="#" class="newsletterForm">
+                                <input type="email" name="email" id="subscribesForm" placeholder="Your e-mail here">
+                                <button type="submit" class="btn original-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title">Advertisement</h5>
+                        <a href="#"><img style="border-radius: 10px;box-shadow: 0 1px 4px rgba(0,0,0,.02), 0 11px 12px -5px rgba(0,0,0,.17);" src="/front/img/bg-img/add.gif" alt=""></a>
+                    </div>
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title">Latest Posts</h5>
+
+                        <div class="widget-content">
+
+                            <!-- Single Blog Post -->
+                            <div class="single-blog-post d-flex align-items-center widget-post">
+                                <!-- Post Thumbnail -->
+                                <div class="post-thumbnail">
+                                    <img style="border-radius: 10px;box-shadow: 0 1px 4px rgba(0,0,0,.02), 0 11px 12px -5px rgba(0,0,0,.17);" src="/front/img/blog-img/lp1.jpg" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <div class="post-meta">
+                                        <p><a href="#">12 March</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Blog Post -->
+                            <div class="single-blog-post d-flex align-items-center widget-post">
+                                <!-- Post Thumbnail -->
+                                <div class="post-thumbnail">
+                                    <img style="border-radius: 10px;box-shadow: 0 1px 4px rgba(0,0,0,.02), 0 11px 12px -5px rgba(0,0,0,.17);" src="/front/img/blog-img/lp2.jpg" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                    <div class="post-meta">
+                                        <p><a href="#">12 March</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Blog Post -->
+                            <div class="single-blog-post d-flex align-items-center widget-post">
+                                <!-- Post Thumbnail -->
+                                <div class="post-thumbnail">
+                                    <img style="border-radius: 10px;box-shadow: 0 1px 4px rgba(0,0,0,.02), 0 11px 12px -5px rgba(0,0,0,.17);" src="/front/img/blog-img/lp3.jpg" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <div class="post-meta">
+                                        <p><a href="#">12 March</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Blog Post -->
+                            <div class="single-blog-post d-flex align-items-center widget-post">
+                                <!-- Post Thumbnail -->
+                                <div class="post-thumbnail">
+                                    <img style="border-radius: 10px;box-shadow: 0 1px 4px rgba(0,0,0,.02), 0 11px 12px -5px rgba(0,0,0,.17);" src="/front/img/blog-img/lp4.jpg" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                    <div class="post-meta">
+                                        <p><a href="#">12 March</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title">标签/Tags</h5>
+                        <div class="widget-content">
+                            <ul class="tags">
+                                <!--TODO 标签跳转-->
+                                {foreach name="tags" item="vo"}<li><a href="#">{$vo.name}</a></li>{/foreach}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Blog Wrapper End ##### -->

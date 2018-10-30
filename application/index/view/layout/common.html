@@ -16,6 +16,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/front/style.css">
+    <link rel="stylesheet" href="/front/dialog/css/dialog.css">
 
 </head>
 
@@ -147,15 +148,15 @@
                             <ul>
                                 <!--TODO Nav跳转-->
                                 <li><a href="/index/index">Home 首页</a></li>
-                                <li><a href="/index/photo">Blog 博客</a>
+                                <li><a href="/index/bloglist">Blog 博客</a>
                                     <ul class="dropdown">
                                         {foreach name="categories" item="vo"}
-                                        <li><a href="/index/index">{$vo.name}</a></li>
+                                        <li><a href="/index/bloglist">{$vo.name}</a></li>
                                         {/foreach}
                                     </ul>
                                 </li>
-                                <li><a href="/index/about">Reserve 预约</a></li>
-                                <li><a href="/index/about">About 关于</a></li>
+                                <li><a href="/index/reserve">Reserve 预约</a></li>
+                                <!--<li><a href="/index/about">About 关于</a></li>-->
                                 <li><a href="/index/contact">Contact 联系</a></li>
                             </ul>
 
@@ -283,8 +284,8 @@
                                 <ul>
                                     <li><a href="/index/index">Home 首页</a></li>
                                     <li><a href="/index/photo">Blog 博客</a></li>
-                                    <li><a href="/index/about">Reserve 预约</a></li>
-                                    <li><a href="/index/about">About 关于</a></li>
+                                    <li><a href="/index/reserve">Reserve 预约</a></li>
+                                    <!--<li><a href="/index/about">About 关于</a></li>-->
                                     <li><a href="/index/contact">Contact 联系</a></li>
                                 </ul>
                             </div>
@@ -344,6 +345,8 @@
 <script src="/front/js/plugins.js"></script>
 <!-- Active js -->
 <script src="/front/js/active.js"></script>
+
+<script src="/front/dialog/js/dialog.js"></script>
 
 </body>
 

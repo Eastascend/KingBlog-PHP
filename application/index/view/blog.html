@@ -32,7 +32,9 @@
                         <h4><a href="#" class="post-headline mb-0">{$articles.title}</a></h4>
                         <div class="post-meta mb-50">
                             <p>By <a href="#">{$articles.author}</a></p>
-                            <p>3 comments</p>
+                            <p>评论：3 </p>&nbsp;&nbsp;<p>点赞：88 </p>&nbsp;&nbsp;<p>浏览：3067 </p><br>
+                            <p>类别：<a href="#">{$category.name}</a></p>&nbsp;&nbsp;
+                            <p>标签：<a href="#">{$tag.name}</a></p>
                         </div>
                         {$articles.content}
                     </div>
@@ -171,14 +173,14 @@
                 <div class="post-sidebar-area">
 
                     <!-- Widget Area -->
-                    <div class="sidebar-widget-area">
+                    <!--<div class="sidebar-widget-area">
                         <form action="#" class="search-form">
                             <input type="search" name="search" id="searchForm" placeholder="Search">
                             <input type="submit" value="submit">
                         </form>
-                    </div>
+                    </div>-->
 
-                    <!-- Widget Area -->
+                    <!-- Widget Area 订阅-->
                     <div class="sidebar-widget-area">
                         <h5 class="title subscribe-title">Subscribe to my newsletter</h5>
                         <div class="widget-content">
@@ -189,103 +191,53 @@
                         </div>
                     </div>
 
-                    <!-- Widget Area -->
+                    <!-- Widget Area 文章-->
                     <div class="sidebar-widget-area">
-                        <h5 class="title">Advertisement</h5>
-                        <a href="#"><img src="/front/img/bg-img/add.gif" alt=""></a>
-                    </div>
-
-                    <!-- Widget Area -->
-                    <div class="sidebar-widget-area">
-                        <h5 class="title">Latest Posts</h5>
+                        <h5 class="title">最新发布</h5>
 
                         <div class="widget-content">
 
                             <!-- Single Blog Post -->
+                            {foreach name="articless" item="vo"}
                             <div class="single-blog-post d-flex align-items-center widget-post">
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp1.jpg" alt="">
+                                    <img src="{$vo.image}" alt="">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-tag">Lifestyle</a>
-                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <h4><a href="#" class="post-headline">{$vo.title}</a></h4>
                                     <div class="post-meta">
-                                        <p><a href="#">12 March</a></p>
+                                        <p><a href="#">{$vo.createtime}</a></p>
                                     </div>
                                 </div>
                             </div>
+                            {/foreach}
 
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex align-items-center widget-post">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp2.jpg" alt="">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-tag">Lifestyle</a>
-                                    <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
-                                    <div class="post-meta">
-                                        <p><a href="#">12 March</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex align-items-center widget-post">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp3.jpg" alt="">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-tag">Lifestyle</a>
-                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
-                                    <div class="post-meta">
-                                        <p><a href="#">12 March</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post d-flex align-items-center widget-post">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="/front/img/blog-img/lp4.jpg" alt="">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-tag">Lifestyle</a>
-                                    <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
-                                    <div class="post-meta">
-                                        <p><a href="#">12 March</a></p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
 
-                    <!-- Widget Area -->
-                    <div class="sidebar-widget-area">
-                        <h5 class="title">Tags</h5>
-                        <div class="widget-content">
-                            <ul class="tags">
-                                <li><a href="#">design</a></li>
-                                <li><a href="#">fashion</a></li>
-                                <li><a href="#">travel</a></li>
-                                <li><a href="#">music</a></li>
-                                <li><a href="#">party</a></li>
-                                <li><a href="#">video</a></li>
-                                <li><a href="#">photography</a></li>
-                                <li><a href="#">adventure</a></li>
-                            </ul>
+
+                        <!-- Widget Area 广告-->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Advertisement</h5>
+                            <a href="#"><img src="/front/img/bg-img/add.gif" alt=""></a>
+                        </div>
+
+                        <!-- Widget Area 标签-->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">标签</h5>
+                            <div class="widget-content">
+                                <ul class="tags">
+                                    {foreach name="tags" item="vo"}
+                                    <li><a href="#">{$vo.name}</a></li>
+                                    {/foreach}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- ##### Single Blog Area End ##### -->
+    <!-- ##### Single Blog Area End ##### -->

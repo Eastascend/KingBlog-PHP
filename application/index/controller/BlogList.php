@@ -8,7 +8,7 @@ use app\admin\model\article\Tag;
 use app\common\controller\Frontend;
 use app\common\library\Token;
 
-class Blog extends Frontend
+class BlogList extends Frontend
 {
 
     protected $noNeedLogin = '*';
@@ -20,10 +20,10 @@ class Blog extends Frontend
 
     public function _initialize()
     {
+        parent::_initialize();
         $this->categoryModel = new Category();
         $this->tagsModel = new Tag();
         $this->articleModel = new Article();
-        parent::_initialize();
     }
 
     public function index()
@@ -33,51 +33,22 @@ class Blog extends Frontend
             ->order('id')
             ->select();
 
-        $this->view->assign("categories", $categories);
-
-        return $this->view->fetch('/blog');
-    }
-
-    public function bloginfo($id)
-    {
-        // 博客类别 Nav
-        $categories = $this->categoryModel
-            ->order('id')
-            ->select();
-
-        // 博客内容
-        $articles = $this->articleModel->find($id);
-
-        // 博客类别
-
-        $category = $this->categoryModel->find($articles->article_category_id);
-
-        // 标签 TODO 多标签
-        $tag = $this->tagsModel->find($articles->article_tag_ids);
-
         // 标签
         $tags = $this->tagsModel
             ->order('id')
             ->select();
 
         // 博客列表
-        $articless = $this->articleModel
+        $articles = $this->articleModel
             ->order('id')
-            ->limit(5)
+            ->limit(10)
             ->select();
-        foreach ($articless as $row) {
-            $row->createtime = date("Y-m-d",$row->createtime);
-        }
 
-
-        $this->view->assign("articles", $articles);
         $this->view->assign("categories", $categories);
-        $this->view->assign("tag", $tag);
         $this->view->assign("tags", $tags);
-        $this->view->assign("category", $category);
-        $this->view->assign("articless", $articless);
+        $this->view->assign("articles", $articles);
 
-        return $this->view->fetch('/blog');
+        return $this->view->fetch('/bloglist');
     }
 
 }
