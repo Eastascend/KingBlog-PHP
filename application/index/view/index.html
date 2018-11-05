@@ -72,7 +72,7 @@
         <div class="row">
             <div class="col-12 col-lg-9">
 
-                <!-- Single Blog Area  TODO 博客列表-->
+                <!-- Single Blog Area  TODO 博客列表--英文月份--评论点赞阅读数显示-->
                 {foreach name="articles" item="vo"}
                 <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s"
                      data-wow-duration="1000ms">
@@ -89,7 +89,7 @@
                             <!-- Blog Content -->
                             <div class="single-blog-content">
                                 <div class="line"></div>
-                                <a href="#" class="post-tag">Lifestyle</a>
+                                <a href="#" class="post-tag">kevinWong</a>
                                 <h4><a href="/index/blog/bloginfo/id/{$vo.id}" class="post-headline">{$vo.title}</a></h4>
                                 <p>{$vo.summary}</p>
                                 <div class="post-meta">
@@ -101,9 +101,9 @@
                     </div>
                 </div>
                 {/foreach}
-                <!-- Load More -->
-                <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
-                    <a href="#" class="btn original-btn">Read More</a>
+                <!-- Load More TODO 阅读更多-->
+                <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1000ms">
+                    <a href="#" class="btn original-btn">阅读更多</a>
                 </div>
             </div>
 
@@ -114,18 +114,18 @@
                     <!-- Widget Area TODO 搜索框-->
                     <div class="sidebar-widget-area">
                         <form action="#" class="search-form">
-                            <input type="search" name="search" id="searchForm" placeholder="Search">
+                            <input type="search" name="search" id="searchForm" placeholder="搜索">
                             <input type="submit" value="submit">
                         </form>
                     </div>
 
                     <!-- Widget Area TODO 订阅框-->
                     <div class="sidebar-widget-area">
-                        <h5 class="title subscribe-title">Subscribe to my newsletter</h5>
+                        <h5 class="title subscribe-title">订阅我的最新发布</h5>
                         <div class="widget-content">
                             <form action="#" class="newsletterForm">
-                                <input type="email" name="email" id="subscribesForm" placeholder="Your e-mail here">
-                                <button type="submit" class="btn original-btn">Subscribe</button>
+                                <input type="email" name="email" id="subscribesForm" placeholder="请输入你的e-mail...">
+                                <button type="submit" class="btn original-btn">订阅</button>
                             </form>
                         </div>
                     </div>
