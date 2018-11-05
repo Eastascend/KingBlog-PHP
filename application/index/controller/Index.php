@@ -54,6 +54,10 @@ class Index extends Frontend
             ->limit(3)
             ->select();
 
+        foreach ($articles as $row){
+            $row->createtime = date("Y-m-d",$row->createtime);
+        }
+
         $this->view->assign("banners", $banners);
         $this->view->assign("categories", $categories);
         $this->view->assign("tags", $tags);
