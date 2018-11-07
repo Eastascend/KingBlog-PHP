@@ -4,6 +4,34 @@
     <list default="true" id="826ad790-014a-46d0-b9fe-bdbf73ed01a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/cache/4e/819c837d54a6ed09abc77a8560a66f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201810/27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201810/28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201810/29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201810/30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201810/31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201811/05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201811/06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/201811/07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1562b2443ceeb1b8bc1f9208224312ea.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/5238ea5576d898565b1d40685dfaa111.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/57d5846736724cc6821b1c8a5d127b69.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/67bcce95b00bb1bf94540ce9e0429668.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/6b4719c8159bdab99c625554de815772.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/6cfdeaebede9a0b7641b0355e2b638bc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/8a178689657486e8aeb59f9a7e62b48f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/998248a98d939ef357183350df8dd230.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/9db9774021673de99924870fdfc6d2ce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/9e4a0934c27feb44d438a675518ec09f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/a2bd8b6c0557f85f2b7aef5fc3894d14.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/ae971e58db97a2f48a71c334ae459ed7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/bb634c9d7a4a2b173c9846b4a4cc2f9b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/bf3caef76949e28864df726aaf621ddc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/c71f4e4fb8c27ca4b288226fbfaf9762.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/d663a874ceeb61bdff2e3e3b3e2fbbb9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/e495f3c56ed45f819ea8e365e3c9b9c7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/f97e5b547711c31b79f9601f101b78a5.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +91,7 @@
         <counts>
           <entry key="css" value="9" />
           <entry key="gitignore" value="4" />
+          <entry key="gitkeep" value="1" />
           <entry key="html" value="28" />
           <entry key="jpg" value="9" />
           <entry key="js" value="7" />
@@ -79,7 +108,7 @@
           <entry key="Image" value="11" />
           <entry key="JavaScript" value="7" />
           <entry key="PHP" value="40" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="SCSS" value="7" />
           <entry key="SQL" value="2" />
         </counts>
@@ -185,8 +214,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="72">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -325,7 +354,7 @@
       <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -565,12 +594,12 @@
       <workItem from="1541004159609" duration="1588000" />
       <workItem from="1541082089024" duration="564000" />
       <workItem from="1541425470974" duration="4229000" />
-      <workItem from="1541594852601" duration="475000" />
+      <workItem from="1541594852601" duration="1003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59567000" />
+    <option name="totallyTimeSpent" value="60095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -604,9 +633,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/command.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -868,10 +894,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="72">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
