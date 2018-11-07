@@ -2,3 +2,5 @@
 .idea
 *.log
 *.css.map
+/runtime
+/application/database.php
