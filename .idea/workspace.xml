@@ -2,29 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="826ad790-014a-46d0-b9fe-bdbf73ed01a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/runtime/cache/4e/819c837d54a6ed09abc77a8560a66f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/1562b2443ceeb1b8bc1f9208224312ea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/5238ea5576d898565b1d40685dfaa111.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/57d5846736724cc6821b1c8a5d127b69.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/67bcce95b00bb1bf94540ce9e0429668.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/6b4719c8159bdab99c625554de815772.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/6cfdeaebede9a0b7641b0355e2b638bc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/8a178689657486e8aeb59f9a7e62b48f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/998248a98d939ef357183350df8dd230.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/9db9774021673de99924870fdfc6d2ce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/9e4a0934c27feb44d438a675518ec09f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/a2bd8b6c0557f85f2b7aef5fc3894d14.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/ae971e58db97a2f48a71c334ae459ed7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/bb634c9d7a4a2b173c9846b4a4cc2f9b.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/bf3caef76949e28864df726aaf621ddc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/c71f4e4fb8c27ca4b288226fbfaf9762.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/d663a874ceeb61bdff2e3e3b3e2fbbb9.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/e495f3c56ed45f819ea8e365e3c9b9c7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/temp/f97e5b547711c31b79f9601f101b78a5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +89,7 @@
           <entry key="dummy" value="16" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1771" />
-          <entry key="php" value="545" />
+          <entry key="php" value="558" />
           <entry key="scss" value="24" />
         </counts>
       </usages-collector>
@@ -120,7 +97,7 @@
         <counts>
           <entry key="CSS" value="196" />
           <entry key="HTML" value="1771" />
-          <entry key="PHP" value="545" />
+          <entry key="PHP" value="558" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="SCSS" value="24" />
         </counts>
@@ -216,8 +193,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+            <state relative-caret-position="240">
+              <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -587,12 +564,12 @@
       <workItem from="1541004159609" duration="1588000" />
       <workItem from="1541082089024" duration="564000" />
       <workItem from="1541425470974" duration="4229000" />
-      <workItem from="1541594852601" duration="173000" />
+      <workItem from="1541594852601" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59265000" />
+    <option name="totallyTimeSpent" value="59343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -892,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="240">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
         </state>
       </provider>
     </entry>
