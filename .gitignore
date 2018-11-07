@@ -1,10 +1,4 @@
-/homestead
 .idea
-composer.lock
 *.log
 *.css.map
 !.gitkeep
-.env
-/application/database.php
-/application/config.php
-/runtime
